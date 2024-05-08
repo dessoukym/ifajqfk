@@ -17,6 +17,7 @@ SOURCES += \
     login.cpp \
     newuserlogin.cpp \
     productmanagement.cpp \
+    shopping.cpp \
     userfunctions.cpp \
     usermanagement.cpp
 
@@ -29,6 +30,7 @@ HEADERS += \
     login.h \
     newuserlogin.h \
     productmanagement.h \
+    shopping.h \
     userfunctions.h \
     usermanagement.h
 
@@ -40,6 +42,7 @@ FORMS += \
     login.ui \
     newuserlogin.ui \
     productmanagement.ui \
+    shopping.ui \
     userfunctions.ui \
     usermanagement.ui
 
@@ -56,4 +59,5 @@ DISTFILES += \
     userdata
 
 RESOURCES += \
+    data.qrc \
     pic.qrc

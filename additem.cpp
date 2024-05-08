@@ -10,7 +10,7 @@
 #include <QCoreApplication>
 #include <item.h>
 
-QFile menu("C:\\Users\\Malak\\Documents\\labproj\\itemsmenu");
+QFile menu(":/itemsmenu");
 QVector <item> items;
 QVector <item> newitems;
 QVector <item> edited;

@@ -22,8 +22,8 @@ struct account{
 };
 QVector <account> existed;
 QVector <account> added;
-QFile handled("C:\\Users\\Malak\\Documents\\labproj\\adminuserhandling");
-QFile old("C:\\Users\\Malak\\Documents\\labproj\\userdata");
+QFile handled(":/adminuserhandling");
+QFile old(":/userdata");
 usermanagement::usermanagement(QWidget *parent)
     :QDialog(parent)
     , ui(new Ui::usermanagement)

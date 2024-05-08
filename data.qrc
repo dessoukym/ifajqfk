@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>admindatalol</file>
+        <file>adminuserhandling</file>
+        <file>itemsmenu</file>
+        <file>userdata</file>
+    </qresource>
+</RCC>

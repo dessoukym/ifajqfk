@@ -8,7 +8,7 @@
 
 QVector <user> users;
 QVector <user> newusers;
-QFile userdata("C:\\Users\\Malak\\Documents\\labproj\\userdata");
+QFile userdata(":/userdata");
 QString newuserlogin::encryptpass(QString text){
     QString returned=text;
     for (QChar& c:returned){
