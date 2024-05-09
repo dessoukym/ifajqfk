@@ -21,7 +21,7 @@ struct account{
 };
 
 
-QVector<account> deleted;
+
 
 QVector <account> existed;
 QVector <account> added;
@@ -111,38 +111,43 @@ void usermanagement::on_pushButton_clicked()
 
 
 
-//edit
 void usermanagement::on_pushButton_2_clicked()
 {
+    QString x = ui->lineEditusername->text();
 
+    for(int i = 0 ; i<existed.size();i++){
+        if(existed[i].username == x ){
+
+                QMessageBox::information(this, "User Edited ",x+" was edited");
+                hide();
+                login* l= new login;
+                l->show();
+                delete this;
+
+        }
+    }
 }
+
+
+
+
 
 
 void usermanagement::on_pushButton_3_clicked()
 {
-    ui->checkBoxdeletion->setVisible(0);
-    ui->labeluseralrexits->setVisible(0);
-    ui->labelemptyusername->setVisible(0);
-    ui->labelnewuser->setVisible(1);
+    QString x = ui->lineEditusername->text();
 
-    QString username = ui->lineEditusername->text();
-    if (username == "") {
-        ui->labelemptyusername->setVisible(1);
-    } else {
-        bool found = false;
-        for (int i = 0; i < existed.size(); i++) {
-            if (username == existed[i].username) {
-                found = true;
-                deleted.push_back(existed[i]);
-                QMessageBox::information(this, "User Deleted", "User " + username + " deleted successfully.");
-                break;
+    for(int i = 0 ; i<existed.size();i++){
+        if(existed[i].username == x ){
+            ui->checkBoxdeletion->setVisible(1);
+            if(ui->checkBoxdeletion->isChecked()){
+                QMessageBox::information(this, "User deleted ",x+" was deleted");
+                hide();
+               login* l= new login;
+                l->show();
+               delete this;
             }
         }
-        if (!found) {
-            ui->labeluseralrexits->setVisible(1);
-        }
     }
-
 }
-
 
