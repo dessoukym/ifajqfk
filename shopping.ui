@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>940</width>
+    <width>1272</width>
     <height>690</height>
    </rect>
   </property>
@@ -36,7 +36,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="lineEdit_name">
    <property name="geometry">
     <rect>
      <x>630</x>
@@ -46,7 +46,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="lineEdit_quant">
    <property name="geometry">
     <rect>
      <x>630</x>
@@ -85,8 +85,8 @@
   <widget class="QPushButton" name="pushButton_checkout">
    <property name="geometry">
     <rect>
-     <x>670</x>
-     <y>540</y>
+     <x>700</x>
+     <y>630</y>
      <width>100</width>
      <height>32</height>
     </rect>
@@ -145,6 +145,177 @@
      <string>Description</string>
     </property>
    </column>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>565</x>
+     <y>200</y>
+     <width>361</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string/>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>467</x>
+     <y>60</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>INCORRECT NAME</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>90</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>INCORRECT QUANTITY</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>180</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Shopping Cart</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxfood">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>330</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>food</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_drinks">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>330</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>drinks</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_ele">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>350</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>electronic</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_pets">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>370</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>pets</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_cle">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>370</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>cleaning</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_candy">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>350</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>candy</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>300</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FILTERS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonsearch_2">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>400</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>filter</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SEARCH</string>
+   </property>
   </widget>
  </widget>
  <resources/>

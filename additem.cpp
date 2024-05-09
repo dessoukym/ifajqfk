@@ -10,7 +10,7 @@
 #include <QCoreApplication>
 #include <item.h>
 
-QFile menu(":/itemsmenu");
+QFile menu("/Users/ali/ifajqfk-main/itemsmenu");
 QVector <item> items;
 QVector <item> newitems;
 QVector <item> edited;

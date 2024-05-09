@@ -14,16 +14,19 @@ QString usermanagement::encryptpass(QString text){
     return returned;
 }
 
-
 QString currentadmin;
 struct account{
     QString username;
     QString password;
 };
+
+
+QVector<account> deleted;
+
 QVector <account> existed;
 QVector <account> added;
-QFile handled(":/adminuserhandling");
-QFile old(":/userdata");
+QFile handled("/Users/ali/ifajqfk-main/adminuserhandling");
+QFile old("/Users/ali/ifajqfk-main/userdata");
 usermanagement::usermanagement(QWidget *parent)
     :QDialog(parent)
     , ui(new Ui::usermanagement)
@@ -44,9 +47,13 @@ usermanagement::usermanagement(QWidget *parent)
         existed.push_back(a);
     }
 }
+
+
 void usermanagement::setadmin(QString text){
     currentadmin=text;
 }
+
+
 usermanagement::~usermanagement()
 {
     handled.open(QIODevice::Append | QIODevice::Text);
@@ -79,7 +86,8 @@ void usermanagement::on_pushButton_clicked()
     for (int i=0; i<existed.size(); i++){
             if (username==existed[i].username){
             ui->labeluseralrexits->setVisible(1);
-             break;
+                break;
+
          }
           else {
             if (i==existed.size()-1){
@@ -101,5 +109,40 @@ void usermanagement::on_pushButton_clicked()
 }
 
 
+
+
+//edit
+void usermanagement::on_pushButton_2_clicked()
+{
+
+}
+
+
+void usermanagement::on_pushButton_3_clicked()
+{
+    ui->checkBoxdeletion->setVisible(0);
+    ui->labeluseralrexits->setVisible(0);
+    ui->labelemptyusername->setVisible(0);
+    ui->labelnewuser->setVisible(1);
+
+    QString username = ui->lineEditusername->text();
+    if (username == "") {
+        ui->labelemptyusername->setVisible(1);
+    } else {
+        bool found = false;
+        for (int i = 0; i < existed.size(); i++) {
+            if (username == existed[i].username) {
+                found = true;
+                deleted.push_back(existed[i]);
+                QMessageBox::information(this, "User Deleted", "User " + username + " deleted successfully.");
+                break;
+            }
+        }
+        if (!found) {
+            ui->labeluseralrexits->setVisible(1);
+        }
+    }
+
+}
 
 

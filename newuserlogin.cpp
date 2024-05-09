@@ -8,7 +8,7 @@
 
 QVector <user> users;
 QVector <user> newusers;
-QFile userdata(":/userdata");
+QFile userdata("/Users/ali/ifajqfk-main/userdata");
 QString newuserlogin::encryptpass(QString text){
     QString returned=text;
     for (QChar& c:returned){

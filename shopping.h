@@ -18,6 +18,14 @@ public:
 private slots:
     void on_pushButtonsearch_clicked();
 
+    void on_pushButton_add_clicked();
+
+    void on_pushButton_del_clicked();
+
+    void on_pushButton_checkout_clicked();
+
+    void on_pushButtonsearch_2_clicked();
+
 private:
     Ui::shopping *ui;
 };

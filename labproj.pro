@@ -12,6 +12,8 @@ SOURCES += \
     additem.cpp \
     admin.cpp \
     adminfunctions.cpp \
+    checkout.cpp \
+    final.cpp \
     inventory.cpp \
     main.cpp \
     login.cpp \
@@ -25,6 +27,8 @@ HEADERS += \
     additem.h \
     admin.h \
     adminfunctions.h \
+    checkout.h \
+    final.h \
     inventory.h \
     item.h \
     login.h \
@@ -38,6 +42,8 @@ FORMS += \
     additem.ui \
     admin.ui \
     adminfunctions.ui \
+    checkout.ui \
+    final.ui \
     inventory.ui \
     login.ui \
     newuserlogin.ui \

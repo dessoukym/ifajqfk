@@ -4,5 +4,6 @@
         <file>adminuserhandling</file>
         <file>itemsmenu</file>
         <file>userdata</file>
+        <file>cartdata</file>
     </qresource>
 </RCC>

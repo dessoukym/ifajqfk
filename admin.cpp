@@ -19,7 +19,7 @@ admin::admin(QWidget *parent)
     ui->label_nousername->setVisible(0);
     ui->label_nopass->setVisible(0);
     ui->label_error->setVisible(0);
-    QFile admindata(":/admindatalol");
+    QFile admindata("/Users/ali/ifajqfk-main/admindatalol");
     admindata.open(QIODevice::ReadOnly);
     QTextStream in(&admindata);
     while (!in.atEnd()){
@@ -30,7 +30,7 @@ admin::admin(QWidget *parent)
         a.password=parts[1];
         admins.push_back(a);
     }
-    QFile userdata(":/userdata");
+    QFile userdata("/Users/ali/ifajqfk-main/userdata");
     userdata.open(QIODevice::ReadOnly);
     QTextStream i(&userdata);
     while (!i.atEnd()){
